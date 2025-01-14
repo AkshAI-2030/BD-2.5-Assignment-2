@@ -1,5 +1,4 @@
 const express = require('express');
-const { resolve } = require('path');
 const cors = require('cors');
 
 const app = express();
@@ -196,21 +195,23 @@ app.get('/stocks/sort/growth', (req, res) => {
   res.json({ stocks: sortedStocks });
 });
 ////////////////////////////////////////////////////////////
-function filterByExchange(stock) {
-  return stock.exchange.toLowerCase() === 'NSE'.toLowerCase();
+function filterByExchange(stock,exchange) {
+  return stock.exchange.toLowerCase() === exchange.toLowerCase();
 }
 
 app.get('/stocks/filter/exchange', (req, res) => {
-  let filteredStocks = stocks.filter((stock) => filterByExchange(stock));
+  let exchange = req.query.exchange;
+  let filteredStocks = stocks.filter((stock) => filterByExchange(stock,exchange));
   res.json({ stocks: filteredStocks });
 });
 ////////////////////////////////////////////////////////////
-function filterByIndustry(stock) {
-  return stock.industry.toLowerCase() === 'Finance'.toLowerCase();
+function filterByIndustry(stock,industry) {
+  return stock.industry.toLowerCase() === industry.toLowerCase();
 }
 
 app.get('/stocks/filter/industry', (req, res) => {
-  let filteredStocks = stocks.filter((stock) => filterByIndustry(stock));
+  let industry = req.query.industry;
+  let filteredStocks = stocks.filter((stock) => filterByIndustry(stock,industry));
   res.json({ stocks: filteredStocks });
 });
 ////////////////////////////////////////////////////////////
