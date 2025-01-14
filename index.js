@@ -175,33 +175,44 @@ app.get('/stocks', (req, res) => {
   res.json({ stocks: stocks });
 });
 
-function sortedStocksByPrice(stock1, stock2) {
+function sortedStocksByPriceDec(stock1, stock2) {
+  return stock2.price - stock1.price; //Descending order
+}
+
+function sortedStocksByPriceAsc(stock1, stock2) {
   return stock1.price - stock2.price; //Ascending order
 }
 
 app.get('/stocks/sort/pricing', (req, res) => {
+  let sort = req.query.pricing;
   let stocksCopy = stocks.slice();
-  let sortedStocks = stocksCopy.sort(sortedStocksByPrice);
+  let sortedStocks;
+  if(sort==="low-to-high"){
+    sortedStocks = stocksCopy.sort(sortedStocksByPriceAsc);
+  }
+  else if(sort==="high-to-low"){
+      sortedStocks = stocksCopy.sort(sortedStocksByPriceDec);
+    }
   res.json({ stocks: sortedStocks });
 });
 
-function sortedStocksByPrice(stock1, stock2) {
-  return stock2.price - stock1.price; //Descending order
-}
-
-app.get('/stocks/sort/pricing', (req, res) => {
-  let stocksCopy = stocks.slice();
-  let sortedStocks = stocksCopy.sort(sortedStocksByPrice);
-  res.json({ stocks: sortedStocks });
-});
 ///////////////////////////////////////////////////////////
-function sortedStocksByGrowth(stock1, stock2) {
+function sortedStocksByGrowthAsc(stock1, stock2) {
   return stock1.growth - stock2.growth; //Ascending order
 }
-
+function sortedStocksByGrowthDec(stock1, stock2) {
+  return stock2.growth - stock1.growth; //Descending order
+}
 app.get('/stocks/sort/growth', (req, res) => {
+  let sort = req.query.growth;
   let stocksCopy = stocks.slice();
-  let sortedStocks = stocksCopy.sort(sortedStocksByGrowth);
+  let sortedStocks;
+  if(sort==="low-to-high"){
+    sortedStocks = stocksCopy.sort(sortedStocksByGrowthAsc);
+  }
+  else if(sort==="high-to-low"){
+      sortedStocks = stocksCopy.sort(sortedStocksByGrowthDec);
+    }
   res.json({ stocks: sortedStocks });
 });
 
