@@ -1,12 +1,12 @@
-# Advani Stocks API
+# Basic-Stocks Hub
 
 ## Overview
-Advani Stocks API provides stock listing, sorting, and filtering for NSE and BSE stocks across various sectors.
+Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE stocks across various sectors.
 
 ## Setup & Deployment
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/advani-stocks-api
+   git clone https://github.com/Basic-Stocks-Hub
    ```
 2. Install dependencies:
    ```sh
@@ -33,13 +33,13 @@ Advani Stocks API provides stock listing, sorting, and filtering for NSE and BSE
 ## Integration with Advani Exchange UI
 1. Deploy the backend API to Vercel.
 2. Copy the deployment URL.
-3. Open [Advani Stocks Frontend](https://bd2-stock-listing.vercel.app/).
+3. Open [Basic-Stocks Hub Frontend](https://bd2-stock-listing.vercel.app/).
 4. Paste the backend URL in the **Server URL** field and save.
 
 ## Features
 - Sort stocks by price and growth.
 - Filter stocks by exchange and industry.
-- Seamless integration with Advani Exchange’s frontend.
+- Seamless integration with Basic-Stocks Hub’s frontend.
 
 ### Notes
 - Ensure `cors` is imported before API endpoints:
@@ -51,8 +51,8 @@ Advani Stocks API provides stock listing, sorting, and filtering for NSE and BSE
 ## Live Demo & Resources
 - **Live Video Demo:** [Click Here](#)
 - **StackBlitz URL:** [StackBlitz Project](https://stackblitz.com/edit/stackblitz-starters-grocl4?file=index.js)
-- **Deployed URL:** [Advani Stocks API](https://advani-stocks-api.vercel.app/)
+- **Deployed URL:** [Advani Stocks API](https://basic-stocks-hub-akshay.vercel.app/)
 
 ## Conclusion
-This API enables efficient stock listing, sorting, and filtering, enhancing the Advani Stocks trading experience.
+This API enables efficient stock listing, sorting, and filtering, enhancing the Stocks Hub trading experience.
 
