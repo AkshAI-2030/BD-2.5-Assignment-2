@@ -6,7 +6,7 @@ Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE 
 ## Setup & Deployment
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Basic-Stocks-Hub
+   git clone https://github.com/AkshAI-2030/Basic-Stocks-Hub
    ```
 2. Install dependencies:
    ```sh
@@ -50,7 +50,7 @@ Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE 
 
 ## Live Demo & Resources
 - **Live Video Demo:** [Click Here](#)
-- **StackBlitz URL:** [StackBlitz Project](https://stackblitz.com/edit/stackblitz-starters-grocl4?file=index.js)
+- **StackBlitz URL:** [StackBlitz Project](https://stackblitz.com/edit/stackblitz-starters-movkpq?file=index.js)
 - **Deployed URL:** [Advani Stocks API](https://basic-stocks-hub-akshay.vercel.app/)
 
 ## Conclusion
