@@ -3,10 +3,24 @@
 ## Overview
 Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE stocks across various sectors.
 
+## Live Demo & Resources
+<div>
+    <a href="https://www.loom.com/share/77e78dbb5f2541bda0aeff1073948090">
+      <p>Basic-Stocks-Hub-LiveDemo - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/77e78dbb5f2541bda0aeff1073948090">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/77e78dbb5f2541bda0aeff1073948090-f5ef58a7edf5f1c1-full-play.gif">
+    </a>
+  </div>
+  
+- **StackBlitz URL:** [StackBlitz Project](https://stackblitz.com/edit/stackblitz-starters-movkpq?file=index.js)
+- **Deployed URL:** [Stocks-Hub API](https://basic-stocks-hub-akshay.vercel.app/)
+
+
 ## Setup & Deployment
 1. Clone the repository:
    ```sh
-   git clone https://github.com/AkshAI-2030/Basic-Stocks-Hub
+   git clone https://github.com/AkshAI-2030/Basic-Stocks-Hub.git
    ```
 2. Install dependencies:
    ```sh
@@ -14,7 +28,7 @@ Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE 
    ```
 3. Start the server:
    ```sh
-   npm start
+   node index.js
    ```
 
 ## API Endpoints
@@ -47,12 +61,7 @@ Basic-Stocks Hub provides stock listing, sorting, and filtering for NSE and BSE 
   let cors = require('cors');
   app.use(cors());
   ```
-
-## Live Demo & Resources
-- **Live Video Demo:** [Click Here](#)
-- **StackBlitz URL:** [StackBlitz Project](https://stackblitz.com/edit/stackblitz-starters-movkpq?file=index.js)
-- **Deployed URL:** [Advani Stocks API](https://basic-stocks-hub-akshay.vercel.app/)
-
+  
 ## Conclusion
 This API enables efficient stock listing, sorting, and filtering, enhancing the Stocks Hub trading experience.
 
